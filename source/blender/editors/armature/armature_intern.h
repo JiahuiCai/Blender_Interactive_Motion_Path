@@ -205,6 +205,13 @@ void POSELIB_OT_browse_interactive(struct wmOperatorType *ot);
 void POSELIB_OT_apply_pose(struct wmOperatorType *ot);
 
 /* ******************************************************* */
+#ifdef __cplusplus
+extern "C" {
+#endif
+void POSE_OT_motion_curve(struct wmOperatorType *ot);
+#ifdef __cplusplus
+}
+#endif
 /* Pose Sliding Tools */
 /* pose_slide.c */
 

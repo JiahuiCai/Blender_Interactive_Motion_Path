@@ -4,6 +4,18 @@
    See 'release/text/readme.html' for the end user read-me.
 
 
+Jiahui Cai's Note: 
+
+This is a custom fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo. 
+For implementation details, please refer to the following files:
+release/scripts/startup/bl_ui/properties_data_bone.py
+release/scripts/startup/bl_ui/space_toolsystem_toolbar.py
+source/blender/editors/armature/CMakeLists.txt
+source/blender/editors/armature/armature_intern.h
+source/blender/editors/armature/armature_ops.c
+source/blender/editors/armature/pose_anim_motion_curve.cc
+
+
 Blender
 =======
 

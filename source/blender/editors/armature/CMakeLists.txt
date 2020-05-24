@@ -29,6 +29,7 @@ set(INC
   ../../../../intern/eigen
   ../../../../intern/glew-mx
   ../../../../intern/guardedalloc
+  ../../../../extern/Eigen3/
 )
 
 set(INC_SYS
@@ -53,6 +54,7 @@ set(SRC
   pose_slide.c
   pose_transform.c
   pose_utils.c
+  pose_anim_motion_curve.cc
 
   armature_intern.h
   meshlaplacian.h

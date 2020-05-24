@@ -144,6 +144,8 @@ void ED_operatortypes_armature(void)
 
   WM_operatortype_append(POSELIB_OT_action_sanitize);
 
+  WM_operatortype_append(POSE_OT_motion_curve);
+
   /* POSE SLIDING */
   WM_operatortype_append(POSE_OT_push);
   WM_operatortype_append(POSE_OT_relax);
