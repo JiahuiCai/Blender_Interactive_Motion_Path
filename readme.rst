@@ -4,17 +4,25 @@
    See 'release/text/readme.html' for the end user read-me.
 
 
-Jiahui Cai's Note: 
+Jiahui(Jack) Cai's Note: 
+-----------------
+This is a fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo. Feel free to ask me any questions if the code is confusing because I had to hack a bit for specific gizmo behaviors.
 
-This is a custom fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo. 
 For implementation details, please refer to the following files:
-release/scripts/startup/bl_ui/properties_data_bone.py
-release/scripts/startup/bl_ui/space_toolsystem_toolbar.py
-source/blender/editors/armature/CMakeLists.txt
-source/blender/editors/armature/armature_intern.h
-source/blender/editors/armature/armature_ops.c
-source/blender/editors/armature/pose_anim_motion_curve.cc
 
+- `source/blender/editors/armature/pose_anim_motion_curve.cc <https://github.com/JiahuiCai/Blender_Interactive_Motion_Path/blob/interactive_motion_path/source/blender/editors/armature/pose_anim_motion_curve.cc>`__
+
+Minor changes in:
+
+- release/scripts/startup/bl_ui/properties_data_bone.py 
+
+- release/scripts/startup/bl_ui/space_toolsystem_toolbar.py
+
+- source/blender/editors/armature/CMakeLists.txt
+
+- source/blender/editors/armature/armature_intern.h
+
+- source/blender/editors/armature/armature_ops.c
 
 Blender
 =======
