@@ -4,9 +4,9 @@
    See 'release/text/readme.html' for the end user read-me.
 
 
-Jiahui(Jack) Cai's Note: 
-========================
-This is a fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo.
+Blender implementation of "Tangent-Space Optimization for Interactive Animation Control"
+================================================================================================
+This is a fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo. The executable for Windows10 can be found under `Release <https://github.com/JiahuiCai/Blender_Interactive_Motion_Path/releases>`__.
 
 - The core idea comes from the Disney Research paper, `Tangent-Space Optimization for Interactive Animation Control <https://studios.disneyresearch.com/2019/07/12/tangent-space-optimization-of-controls-for-character-animation/>`__
 
