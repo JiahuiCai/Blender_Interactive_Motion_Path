@@ -74,6 +74,7 @@ Limitations:
 - The tool is designed for global poses, meaning you will need to key the entire character even if you only change the arms or do any minor adjustments. This also means that shifting keys to create overlap motions is not supported. You need to align all keyframes. 
 - Object mode transforms are not supported. Make sure your object transfrom is zeroed out.
 - Rotational adjustment feature is limited, twist motion along the bone's local-Y axis cannot be accomplished using the tools' interface. But you could pin the bones first, use the blender rotation tool to rotate and then click on the motion path to allow the solver to recover the pinned locations.
+- My original intention is to have this motion trail/pin&drag based workflow replace the need for a complex rig. But unfortunately the pin&drag workflow is equally as tedious as working with a complex FK/IK switching rig. I would recommend you use this tool with a basic IK rig since at the very least you can achieve both IK&FK behaviors with a simple IK rig using this tool, eliminating the need for IK/FK switching.
 
 Files:
 ------------
