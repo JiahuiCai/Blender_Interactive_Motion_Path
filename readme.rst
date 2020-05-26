@@ -4,7 +4,7 @@
    See 'release/text/readme.html' for the end user read-me.
 
 
-Jiahui(Jack) Cai's Note: 
+Blender implementation of "Tangent-Space Optimization for Interactive Animation Control"
 ========================
 This is a fork of the Blender repo. I implemented the interactive motion path editing gizmo in this repo.
 
