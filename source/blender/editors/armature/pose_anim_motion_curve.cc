@@ -1164,26 +1164,29 @@ static void WIDGETGROUP_motion_curve_refresh(const struct bContext *C,
     bool is_editable = false;
     std::vector<float> keyframes;
     {
-      ListBase fcurves = {NULL, NULL};
       bAction *act = ob->adt->action;
 
       if (act == NULL) {
         continue;
       }
 
-      action_get_item_transforms(act, ob, (bPoseChannel *)(ob->pose->chanbase.first), &fcurves);
+      FCurve *fcu = NULL;
+      for (fcu = (FCurve *)act->curves.first; fcu; fcu = fcu->next) {
+        if (fcu->totvert) {
+          break;
+        }
+      }
 
-      LISTBASE_FOREACH (LinkData *, link, &fcurves) {
-        FCurve *fcu = (FCurve *)(link->data);
+      if (fcu == NULL) {
+        continue;
+      }
 
+      if (fcu->totvert > 0) {
         for (int x = 0; x < fcu->totvert; x++) {
           float key_time = fcu->bezt[x].vec[1][0];
           keyframes.push_back(key_time);
         }
-
-        break;
       }
-      BLI_freelistN(&fcurves);
 
       if (keyframes.size() > 0 && cfra >= keyframes.front() && cfra <= keyframes.back()) {
         is_editable = true;
