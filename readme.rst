@@ -16,6 +16,8 @@ This is a fork of the Blender repo. I implemented the interactive motion path ed
 
 .. image:: https://github.com/JiahuiCai/FileStorage/blob/master/AnimationTest.gif?raw=true
    :width: 49%
+.. image::  https://github.com/JiahuiCai/FileStorage/blob/master/motion_edit_with_constraints.gif?raw=true
+   :width: 49%
 .. image:: https://github.com/JiahuiCai/FileStorage/blob/master/longchain.gif?raw=true
    :width: 49%
 
