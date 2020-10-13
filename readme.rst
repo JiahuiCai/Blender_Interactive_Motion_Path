@@ -10,7 +10,7 @@ This is a fork of the Blender repo. I implemented the interactive motion path ed
 
 - The core idea comes from the Disney Research paper, `Tangent-Space Optimization for Interactive Animation Control <https://studios.disneyresearch.com/2019/07/12/tangent-space-optimization-of-controls-for-character-animation/>`__
 
-- The code is presented for reference only. The tool is not ready for production due to some limitations mentioned below, specifically quaternions do work at all. 
+- The code is presented for reference only. The tool is not ready for production due to some limitations mentioned below, specifically quaternions do not work at all. 
 
 - Feel free to ask me any questions if the code is confusing as I had to hack a bit for specific gizmo behaviors.
 
