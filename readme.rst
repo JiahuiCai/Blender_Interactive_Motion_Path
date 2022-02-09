@@ -27,6 +27,7 @@ Features:
 - Left click and drag to alter the motion path at current frame time.
     - If there is a keyframe at the current frame time, the keyframe is adjusted.
     - Otherwise the tangents of the fcurves are adjusted (Refer to the paper above)
+    - It is important to understand that it does not matter which frame-dot you click on the motion path, you are still changing the pose of the character at the CURRENT frame shown in the time line. This is intentional as it helps avoid misclick when multiple frame-dots on the motion path are bunched up. Read the next feature to find out how to change current frame time directly in the viewport.
     - Useful for giving FK-like interpolation to IK controllers or IK-like interpolation for FK rigs. You don't need IK/FK switch anymore.
     - No additional keyframes are added, only the tangents are modified, which gives nice propotional editing behavior by default.
 
